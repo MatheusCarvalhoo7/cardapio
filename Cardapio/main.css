@@ -1,0 +1,178 @@
+/* reset básico */
+body{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* cabeçalho */
+header{
+    background-color: #ff9800;
+    color:#fff;
+    text-align: center;
+    padding: 1rem 0; /* corrigido (antes tava 1 rem) */
+}
+
+/* banner da página */
+.banner{
+    background-color:#ffaa00;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+
+    display: flex; /* centraliza */
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: #fcae13;
+    text-shadow: 2px 4px 2px rgba(0,0,0,0.5);
+}
+
+/* conteúdo do banner */
+.banner-content{
+    width: 80%;
+}
+
+/* título */
+.banner-content h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* parágrafo do banner */
+.banner p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* links do menu */
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: #493327;
+}
+
+/* efeito hover */
+nav a:hover{
+    background-color: #412c21;
+}
+
+/* conteúdo principal */
+main{
+    width: 80%;
+    margin: 2rem auto;
+}
+
+/* categorias */
+.categoria{
+    margin-bottom: 2rem; /* corrigido (antes tava 2 rem) */
+}
+
+/* cada produto */
+.produto{
+    background-color:white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* imagem do produto */
+.produto img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem; /* corrigido */
+}
+
+/* preço */
+.preco{
+    font-weight: bold;
+    color:rgb(123, 72, 72);
+    margin-bottom: 1rem;
+}
+
+/* botão adicionar */
+.adicionar{
+    background-color: #ffc401;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* área do pedido */
+#pedido{
+    background-color: #FFBD14;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* lista do pedido */
+#lista-pedido{
+   list-style: none;
+   padding: 0;
+}
+
+/* botão finalizar */
+#finalizar-pedido{
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* contato */
+#contato{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* redes sociais */
+.redes-sociais a{
+    display: inline-block;
+    background-color: yellow;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 0.5rem;
+}
+
+/* link visitado */
+.redes-sociais a:visited{
+    color: black;
+}
+
+/* rodapé */
+footer{
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #502314;
+    color: #fff;
+}
+
+/* responsivo */
+@media (min-width: 768px){
+    main{ /* corrigido (antes tava m ain) */
+        width: 60%;
+    }
+
+    .categoria{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+}

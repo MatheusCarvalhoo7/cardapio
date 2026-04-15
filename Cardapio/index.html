@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- configura o tipo de caractere -->
+    <meta charset='utf-8'>
+
+    <!-- compatibilidade com navegador -->
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <!-- título da aba -->
+    <title>Modern king | Inicio</title>
+
+    <!-- deixa responsivo -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- conecta com o css -->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <!-- ícone da aba -->
+    <link rel="shortcut icon" href="images/Cheddar e cebola.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- parte de cima (banner) -->
+    <header class="banner">
+        <section class="banner-content">
+            <h1>Modern king</h1>
+
+            <!-- navegação do site -->
+            <nav>
+                <a href="#lanches">Lanches</a>
+                <a href="#bebidas">Bebidas</a>
+                <a href="#pedido">Pedido</a>
+                <a href="#Contato">Contato</a>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+
+        <!-- seção de lanches -->
+        <h2>Lanches</h2>
+
+        <section id="lanches" class="categoria">
+
+            <!-- cada produto é um bloco -->
+            <div class="produto">
+                <img src="images/Cheddar.jpg" alt="Cheddar">
+                <h3>Cheddar</h3>
+                <p>Lanche de cheddar com 3 hamburgueres e pão de batata</p>
+
+                <!-- preço -->
+                <span class="preco">R$ 30,00</span>
+
+                <!-- botão que o JS usa -->
+                <button class="adicionar">Adicionar</button>
+            </div>
+
+            <!-- repete o mesmo padrão pros outros produtos -->
+            <div class="produto">
+                <img src="images/lanche_picanha.jpg" alt="Picanha">
+                <h3>Picanha</h3>
+                <p>Lanche de gourmet de picanha</p>
+                <span class="preco">R$ 36,00</span>
+                <button class="adicionar">Adicionar</button>
+            </div>
+
+            <!-- (mesma lógica pros outros itens, só muda conteúdo) -->
+
+            <h2>Bebidas</h2>
+        </section>
+
+        <!-- seção de bebidas -->
+        <section id="bebidas" class="categoria">
+
+            <div class="produto">
+                <img src="images/coca-cola-perfeita-250ml-1.webp" alt="coca cola">
+                <h3>Coca Cola garrafa</h3>
+                <p>250 ml</p>
+                <span class="preco">R$ 15,00</span>
+                <button class="adicionar">Adicionar</button> 
+            </div>
+
+            <!-- outros seguem o mesmo padrão -->
+        </section>
+
+        <!-- parte do pedido -->
+        <section id="pedido">
+            <h2>Seu pedido</h2>
+
+            <!-- lista que o JS preenche -->
+            <ul id="lista-pedido"></ul>
+
+            <!-- total -->
+            <p id="total"> Total: R$ 0,00</p>
+
+            <!-- botão de finalizar -->
+            <button id="finalizar-pedido">Finalizar Pedido</button>
+        </section>
+
+    </main>
+
+    <!-- rodapé -->
+    <footer>
+
+        <!-- contato -->
+        <section id="Contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco:</p>
+
+            <!-- redes sociais -->
+            <div class="redes-sociais">
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a href="https://web.whatsapp.com/" target="_blank">WhatsApp</a>
+            </div>
+        </section>
+
+        <!-- direitos -->
+        <p>&copy;2026 todos os direitos reservados</p>
+
+        <!-- autor -->
+        <p>Desenvolvido por: <a href="https://github.com/KauadaSilva2/Cardapio">Kauã da Silva</a></p>
+    </footer>
+   
+</body>
+
+<!-- conecta com o javascript -->
+<script src='main.js'></script>
+
+</html>
